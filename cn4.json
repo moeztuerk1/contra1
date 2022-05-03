@@ -1,0 +1,118 @@
+{
+"status": "success",
+"message": "OK",
+"data": {
+"locations": [
+{
+"id": 1,
+"name": "Hamburg",
+"state": "Free and Hanseatic City of Hamburg",
+"country": "Germany",
+"country_code": "DE",
+"locode": "DEHAM",
+"lat": 53.55073,
+"lng": 9.99302
+},
+{
+"id": 2,
+"name": "Leipzig",
+"state": "Saxony",
+"country": "Germany",
+"country_code": "DE",
+"locode": "DELEJ",
+"lat": 51.33962,
+"lng": 12.37129
+},
+{
+"id": 3,
+"name": "Tokyo",
+"state": "Tokyo Prefecture",
+"country": "Japan",
+"country_code": "JP",
+"locode": "JPTYO",
+"lat": 35.6895,
+"lng": 139.69171
+}
+],
+"route": {
+"prepol": {
+"location": 2,
+"date": "2022-04-21 11:33:00",
+"actual": true
+},
+"pol": {
+"location": 1,
+"date": "2022-05-03 15:00:00",
+"actual": false
+},
+"pod": {
+"location": 3,
+"date": "2022-06-03 16:00:00",
+"actual": false
+},
+"postpod": {
+"location": 3,
+"date": "2022-06-03 16:00:00",
+"actual": false
+}
+},
+"vessels": [
+{
+"id": 1,
+"name": "ONE OLYMPUS",
+"imo": 9312987,
+"call_sign": "9VPQ7",
+"mmsi": 563048400,
+"flag": "SG"
+}
+],
+"containers": [
+{
+"number": "SEGU1364958",
+"iso_code": "22G1",
+"events": [
+{
+"location": 2,
+"description": "Empty to Shipper",
+"status": "CEP",
+"date": "2022-04-21 11:33:00",
+"actual": true,
+"type": "land",
+"vessel": null,
+"voyage": null
+},
+{
+"location": 1,
+"description": "Received at Origin",
+"status": "CPS",
+"date": "2022-04-25 15:51:00",
+"actual": true,
+"type": "land",
+"vessel": null,
+"voyage": null
+},
+{
+"location": 1,
+"description": "Vessel departure from first POL",
+"status": "VDL",
+"date": "2022-05-03 15:00:00",
+"actual": false,
+"type": "sea",
+"vessel": 1,
+"voyage": "068E"
+},
+{
+"location": 3,
+"description": "Vessel arrival at final POD",
+"status": "VAD",
+"date": "2022-06-03 16:00:00",
+"actual": false,
+"type": "sea",
+"vessel": 1,
+"voyage": "068E"
+}
+]
+}
+]
+}
+}
